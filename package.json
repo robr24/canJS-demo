@@ -19,6 +19,12 @@
     "steal": "0.9.3"
   },
   "system": {
-    "npmDependencies": ["bootstrap", "can", "jquery", "steal"]
+    "npmDependencies": ["bootstrap", "can", "jquery", "steal"],
+    "paths": {
+      "attrs/*": "client/attrs/*.js",
+      "components/*": "client/components/*.js",
+      "controls/*": "client/controls/*.js",
+      "models/*": "client/models/*.js"
+    }
   }
 }
