@@ -2,7 +2,7 @@
 
 <div class="news-feed container">
 	{{#each items}}
-		<ul class="news-item row" id="news{{id}}">	
+		<ul class="news-item row" id="news-{{data.id}}">	
 			<li class="news-item-list rank">
 				{{data.score}}
 			</li>

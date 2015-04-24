@@ -13,9 +13,9 @@ var SCApp = can.Component.extend({
 	viewModel: VM,
 	events: {
 		'{items} move': function(items, event, item, newIndex, oldIndex) {
-			var selectedItem = this.element.find('#news' + item.attr('id')),
+			var movedItem = this.element.find('#news-' + item.attr('data.id')),
 				newClass = newIndex < oldIndex ? 'moving-up' : 'moving-down';
-			selectedItem.addClass(newClass);
+			movedItem.addClass(newClass);
 
 			// hack, need to hook into transition end event
 			setTimeout(function() {
